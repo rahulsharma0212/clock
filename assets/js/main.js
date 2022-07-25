@@ -89,7 +89,7 @@ const clockText = () => {
   dateYear.innerHTML = year;
 };
 
-setTimeout(clockText, 1000);
+setInterval(clockText, 1000);
 
 /*==================== DARK/LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
