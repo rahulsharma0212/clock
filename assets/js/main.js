@@ -35,6 +35,9 @@ const clockText = () => {
   let month = date.getMonth();
   let year = date.getFullYear();
 
+  // change color based on time
+  document.querySelector(':root').style.setProperty('--hue-color',mm*6);
+
   // We change the hours from 24 to 12 hours and establish whether it is AM or PM
   if (hh >= 12) {
     hh = hh - 12;
